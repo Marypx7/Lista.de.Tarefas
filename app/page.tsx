@@ -1,25 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator"
+import { Plus, List, CircleSlash, Check } from 'lucide-react';
+import { Badge } from "@/components/ui/badge"
 
 const Home = () => {
-  return <div>
-    <Button>Cadastrar</Button>
-    <Input />
-    <Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-    <CardAction>Card Action</CardAction>
-  </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
-  </CardFooter>
+  return <main className="w-full h-screen bg-gray-100 flex justify-center items-center">
+    <Card className="w-lg p-4">
+    <div className="flex gap-2">
+      <Input placeholder="Adicionar tarefa"/>
+      <Button variant="outline" className="cursor-pointer"><Plus /> Cadastrar</Button>
+    </div>
+
+    <Separator />
+
+    <div className="flex gap-2">
+      <Badge className="cursor-pointer"><List />Todas</Badge>
+      <Badge className="cursor-pointer"><CircleSlash />Não finalizadas</Badge>
+      <Badge className="cursor-pointer"><Check />Concluídas</Badge>
+    </div>
+    
 </Card>
-  </div>;
+  </main>;
 };
 
 export default Home;
