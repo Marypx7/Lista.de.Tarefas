@@ -6,6 +6,7 @@ import { Plus, List, CircleSlash, Check, SquarePen, Trash,  ListChecks, Sigma } 
 import { Badge } from "@/components/ui/badge"
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import EditTask from "@/components/ui/edit-task";
 
 const Home = () => {
   return <main className="w-full h-screen bg-gray-100 flex justify-center items-center">
@@ -30,29 +31,14 @@ const Home = () => {
                 <p className="flex-1 px-2 text-sm" >Estudar React</p>
                 <div  className="flex gap-2 items-center">
 
-                <Dialog >
-                <DialogTrigger asChild>
-                    <SquarePen size={16} className="cursor-pointer"/>
-                </DialogTrigger>
+                <EditTask />
 
-                <DialogContent>
-                <DialogHeader>
-                    <DialogTitle>Editar tarefa</DialogTitle>
-                </DialogHeader>
-                <div className="flex gap-2">
-                    <input placeholder="Editar tarefa"/>
-                    <Button className="cursor-pointer">Editar</Button>
-                </div>
-                </DialogContent>
-
-                </Dialog>
-
+                
                 <Trash size={16} className="cursor-pointer"/>
               </div>
             </div>
         </div>
 
-     
 
         <div className="flex justify-between mt-4">
           <div className="flex gap-2 items-center">
