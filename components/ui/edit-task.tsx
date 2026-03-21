@@ -14,10 +14,10 @@ const EditTask = () => {
                 <DialogHeader>
                     <DialogTitle>Editar tarefa</DialogTitle>
                 </DialogHeader>
-                <div className="flex gap-3">
-                    <input
+                <div className="flex gap-2">
+                    <Input
                         placeholder="Editar tarefa"
-                        className="flex-1 border rounded-md px-3 py-2"
+                        className="flex px-2 py-2"
                     />
                     <Button className="cursor-pointer">Editar</Button>
                 </div>

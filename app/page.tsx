@@ -2,10 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator"
-import { Plus, List, CircleSlash, Check, SquarePen, Trash,  ListChecks, Sigma } from 'lucide-react';
+import { Plus, List, CircleSlash, Check, Trash,  ListChecks, Sigma } from 'lucide-react';
 import { Badge } from "@/components/ui/badge"
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import EditTask from "@/components/ui/edit-task";
 
 const Home = () => {
@@ -32,7 +31,6 @@ const Home = () => {
                 <div  className="flex gap-2 items-center">
 
                 <EditTask />
-
                 
                 <Trash size={16} className="cursor-pointer"/>
               </div>
